@@ -1,0 +1,21 @@
+<ion-content padding center text-center>
+<ion-title>¿Tienes Cuenta?</ion-title>
+  <ion-list>
+
+  <ion-item>
+    <ion-label stacked>Username</ion-label>
+    <ion-input type="text"[(ngModel)]="username"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Password</ion-label>
+    <ion-input type="password" [(ngModel)]="password"></ion-input>
+  </ion-item>
+
+</ion-list>
+
+<button ion-button full (click)="goInicio()">Iniciar Sesión</button>
+
+<button ion-button full color="light" (click)="goRegister()">Registrarse</button>
+
+</ion-content>

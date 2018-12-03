@@ -1,0 +1,38 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>REGISTRO</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-list>
+		<ion-item>
+		<ion-input placeholder ="Name" [(ngModel)]="name"></ion-input>
+		</ion-item>
+		<ion-item>
+		<ion-input placeholder ="FistName" [(ngModel)]="firstname"></ion-input>
+		</ion-item>
+		<ion-item>
+		<ion-input placeholder ="Username" [(ngModel)]="username"></ion-input>
+		</ion-item>
+		<ion-item>
+		<ion-input placeholder ="Correo" [(ngModel)]="correo"></ion-input>
+		</ion-item>
+		<ion-item>
+		<ion-input placeholder ="Password" [(ngModel)]="password" type ="password"></ion-input>
+		</ion-item>
+		<ion-item>
+		<ion-input placeholder ="Repeat Password" [(ngModel)]="repeat" type ="password"></ion-input>
+		</ion-item>
+	</ion-list>
+	<button ion-button full (click)="register()">Registar</button>
+</ion-content>

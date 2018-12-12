@@ -12,6 +12,19 @@ import { ReportesPage } from '../pages/reportes/reportes';
 import { VotosPage } from '../pages/votos/votos';
 import { NoticiasPage } from '../pages/noticias/noticias';
 
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+
+const firebaseConfig = 
+{
+  apiKey: "AIzaSyCCVMajJIuRbpC2Rhu2Zob6x-2aWIyavoc",
+  authDomain: "proyectobruno-4b693.firebaseapp.com",
+  databaseURL: "https://proyectobruno-4b693.firebaseio.com",
+  projectId: "proyectobruno-4b693",
+  storageBucket: "proyectobruno-4b693.appspot.com",
+  messagingSenderId: "339913430550"
+
+};
 @NgModule({
   declarations: [
     MyApp,
@@ -24,7 +37,9 @@ import { NoticiasPage } from '../pages/noticias/noticias';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(firebaseConfig,'projectB'),
+    AngularFireDatabaseModule 
   ],
   bootstrap: [IonicApp],
   entryComponents: [

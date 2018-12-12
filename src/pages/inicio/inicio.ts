@@ -23,7 +23,7 @@ import { NoticiasPage } from '../noticias/noticias';
 class InicioContentPage {
   
   constructor() { 
-    
+      
   }
 }
 
@@ -36,11 +36,12 @@ class InicioContentPage {
   </ion-tabs>`
 })
 export class InicioPage {
-  
-  constructor() {
-    this.noticiasPage = NoticiasPage;
-    this.reportesPage = ReportesPage;
-    this.votosPage = VotosPage;
+  noticiasPage = NoticiasPage;
+  reportesPage = ReportesPage;
+  votosPage = VotosPage;
+   constructor(){
     
-  }
+    
+   }
+  
 }

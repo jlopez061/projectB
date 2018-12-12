@@ -8,11 +8,15 @@ import { InicioPage } from '../inicio/inicio';
   templateUrl: 'home.html'
 })
 export class HomePage {
+ 
 
+	
 	username:string;
 	password:string;
-  constructor(public navCtrl: NavController) {
 
+
+  constructor(public navCtrl: NavController) {
+		
   }
 	goInicio(){
 		//console.log("username: "+ this.username);
@@ -22,4 +26,5 @@ export class HomePage {
 	goRegister(){
 		this.navCtrl.push(RegisterPage);
 	}
+	
 }
